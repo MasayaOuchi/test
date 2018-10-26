@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="com.internous" key="selection"/>
+		<item value="table tr:last-child td:first-child" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="table tr:last-child td:first-child"/>
 			<item value="com.internous"/>
 			<item value="com.internous.dev.webproj"/>
 			<item value="com.internous.dev.webproj.action"/>

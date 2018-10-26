@@ -6,32 +6,33 @@ import java.sql.SQLException;
 
 public class DBConnector {
 	/**
-	 * JDBCƒhƒ‰ƒCƒo[–¼
+	 * JDBCãƒ‰ãƒ©ã‚¤ãƒãƒ¼å
 	 */
 	private static String driverName = "com.mysql.jdbc.Driver";
 	/**
-	 * ƒf[ƒ^ƒx[ƒXÚ‘±@URL
+	 * ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹æ¥ç¶šURL
 	 */
 	private static String url = "jdbc:mysql://localhost/testdb";
 	/**
-	 * ƒf[ƒ^ƒx[ƒXÚ‘±ƒ†[ƒU–¼
+	 * ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹æ¥ç¶šãƒ¦ãƒ¼ã‚¶ãƒ¼å
 	 */
 	private static String user = "root";
 	/**
-	 * ƒf[ƒ^ƒx[ƒXÚ‘±ƒpƒXƒ[ƒh
+	 * ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹æ¥ç¶šãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰
 	 */
 	private static String password = "mysql";
 
-public Connection getConnection() {
-	Connection con  = null;
-	try{
-		Class.forName(driverName);
-		con = DriverManager.getConnection(url,user,password);
-	} catch (ClassNotFoundException e) {
-		e.printStackTrace() ;
-	} catch (SQLException e){
-		e.printStackTrace() ;
+
+	public Connection getConnection() {
+		Connection con = null;
+		try{
+			Class.forName(driverName);
+			con = DriverManager.getConnection(url, user, password);
+		} catch (ClassNotFoundException e) {
+		e.printStackTrace();
+		} catch (SQLException e) {
+		e.printStackTrace();
+		}
+		return con ;
 	}
-		return con;
-}
 }

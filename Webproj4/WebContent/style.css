@@ -8,8 +8,8 @@ table th {
 	color: #fff;
 	padding: 8px 15px;
 	background: #258;
-	background:-moz-linear-gradient(rgba(34,85,136,0.7), rgba(34,85,136,,0.9) 50%);
-	background:-webkit-gradient(linear, 100% 0%, 100% 50%, from(rgba(34,85,136,0.7), to(rgba(34,85,136,0.9))));
+	background:-moz-linear-gradient(rgba(34,85,136,0.7), rgba(34,85,136,0.9) 50%);
+	background:-webkit-gradient(linear,100% 0%, 100% 50%, from(rgba(34,85,136,0.7)), to(rgba(34,85,136,0.9)));
 	font-weight: bold;
 	border-left:1px solid #258;
 	border-top:1px solid #258;
@@ -41,7 +41,7 @@ table tr {
 	background: #fff;
 }
 table tr:nth-child(2n+1) {
-	background: #f1f6fec
+	background: #f1f6fc;
 }
 table tr:last-child td {
 	box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
